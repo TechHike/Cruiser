@@ -1,4 +1,6 @@
-﻿param([switch]$Server, [switch]$Background)
+﻿crusise 
+
+param([switch]$Server, [switch]$Background)
 
 $global:CruiserInstallDirectory = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
 
