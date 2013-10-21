@@ -2,9 +2,9 @@ Cruiser is a lightweight continuous build integration server written in Powershe
 
 Supports Mercurial & Git as source control repositories, along with a simple file system source.
 
-= Quick Start
+# Quick Start
 
-===1. Install Cruiser 
+##1. Install Cruiser 
 
 Paste the following line at the powershell prompt.
 
@@ -14,7 +14,7 @@ Paste the following line at the powershell prompt.
 
 This will download all the necessary Cruiser files and import the cruiser module. When the process is finished, you should see a message that says: "Cruiser initialize."
 
-===2. Initialize a working directory.
+##2. Initialize a working directory.
 
 The working directory is where Cruiser places assets such as state files, history, source files and output files.
 
@@ -26,7 +26,7 @@ Initialize-Cruiser
 
 This will create directories and files that are necessary for Cruiser to operate. You will see that the Cruiser-Config.ps1 file will pop open. Read more about configuring cruiser later, let's create our first build now.
 
-===3. Start Cruiser
+##3. Start Cruiser
 
 At the powershell prompt, paste:
 
@@ -38,7 +38,7 @@ This will kick off a build of the Cruiser project hosted on Bitbucket. You will 
 
 Take a look under the output directory and you'll see the build output directory (Cruiser_1.0.1). You will also see index.html at the output root. Open index.html to see the build history displayed in your browser.
 
-===4. Start Cruiser as a Server
+##4. Start Cruiser as a Server
 
 Paste this into the powershell prompt:
 
@@ -48,7 +48,7 @@ Start-Cruiser -Server
 
 This will start Cruiser in server mode. The same build process happens, but it will wait for 5 minutes (by default) between polls.
 
-==5. Start Cruiser in the background
+##5. Start Cruiser in the background
 
 Type:
 
